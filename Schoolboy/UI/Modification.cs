@@ -72,10 +72,26 @@ namespace Schoolboy
                         throw new Exception("Введите класс");
                     }
 
+                    int c = Convert.ToInt32(Class_TB.Text);
+
+                    if (c < 1 || c > 11)
+                    {
+                        Class_TB.Focus();
+                        throw new Exception("Номер класса должнен находиться в диапазоне от 1 до 11");
+                    }
+
                     if (Ranked_TB.Text.Trim() == "")
                     {
                         Ranked_TB.Focus();
                         throw new Exception("Введите занятое место");
+                    }
+
+                    int r = Convert.ToInt32(Ranked_TB.Text);
+
+                    if (r < 1 || r > 3)
+                    {
+                        Ranked_TB.Focus();
+                        throw new Exception("Занятое место находиться в диапазоне от 1 до 3");
                     }
                 }
                 catch (FormatException Fex)
