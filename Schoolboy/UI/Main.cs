@@ -47,7 +47,7 @@ namespace Schoolboy
         {
             try
             {
-                Modification modificationModel = new Modification(false);
+                Modification modificationModel = new Modification(true);
 
                 if (modificationModel.ShowDialog() == DialogResult.OK)
                 {
@@ -78,7 +78,7 @@ namespace Schoolboy
         {
             try
             {
-                Modification modificationModel = new Modification(true);
+                Modification modificationModel = new Modification(false);
 
                 Schoolboy SchoolboyDB = Spisok_LB.SelectedItem as Schoolboy;
 
@@ -97,7 +97,7 @@ namespace Schoolboy
 
                 if (modificationModel.ShowDialog() == DialogResult.OK)
                 {
-                    Schoolboy SchoolboyContext = context.Schoolboys.FirstOrDefault(m => m.Id == SchoolboyDB.Id);
+                    Schoolboy SchoolboyContext = context.Schoolboys.FirstOrDefault(s => s.Id == SchoolboyDB.Id);
 
                     SchoolboyDB.Averagerating = Convert.ToDouble(modificationModel.Averagerating_TB.Text.Trim());
                     SchoolboyDB.Age = Convert.ToInt32(modificationModel.Age_TB.Text.Trim());

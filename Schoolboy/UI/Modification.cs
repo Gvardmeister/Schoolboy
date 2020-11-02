@@ -24,13 +24,13 @@ namespace Schoolboy
         {
             if (IsUpdate)
             {
-                this.Text = "Изменение данных";
-                Spisok_LB_school.Text = "Изменение данных";
+                this.Text = "Добавление данных";
+                Spisok_LB_school.Text = "Добавление данных";               
             }
             else
             {
-                this.Text = "Добавление данных";
-                Spisok_LB_school.Text = "Добавление данных";
+                this.Text = "Изменение данных";
+                Spisok_LB_school.Text = "Изменение данных";
             }
         }
 
