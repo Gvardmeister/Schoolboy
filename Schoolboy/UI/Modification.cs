@@ -43,7 +43,13 @@ namespace Schoolboy
                     if (Averagerating_TB.Text.Trim() == "")
                     {
                         Averagerating_TB.Focus();
-                        throw new Exception("Среднее значение должно содержать значение");
+                        throw new Exception("Средняя оценка должна содержать значение");
+                    }
+
+                    if (Age_TB.Text.Trim() == "")
+                    {
+                        Age_TB.Focus();
+                        throw new Exception("Введите возраст");
                     }
 
                     int b = Convert.ToInt32(Age_TB.Text);
@@ -58,21 +64,27 @@ namespace Schoolboy
 
                     if (String.IsNullOrWhiteSpace(Name))
                     {
-                        throw new Exception("Имя должно содержать значение");
+                        throw new Exception("Введите имя");
                     }
 
                     String Surname = Surname_TB.Text.Trim();
 
                     if (String.IsNullOrWhiteSpace(Surname))
                     {
-                        throw new Exception("Фамилия должна содержать значение");
+                        throw new Exception("Введите фамилию");
                     }
 
                     String Middlename = Middlename_TB.Text.Trim();
 
                     if (String.IsNullOrWhiteSpace(Middlename))
                     {
-                        throw new Exception("Отчество должно содержать значение");
+                        throw new Exception("Введите отчество");
+                    }
+
+                    if (Class_TB.Text.Trim() == "")
+                    {
+                        Class_TB.Focus();
+                        throw new Exception("Введите класс");
                     }
 
                     int c = Convert.ToInt32(Class_TB.Text);
@@ -81,6 +93,12 @@ namespace Schoolboy
                     {
                         Class_TB.Focus();
                         throw new Exception("Номер класса должнен находиться в диапазоне от 1 до 11");
+                    }
+
+                    if (Ranked_TB.Text.Trim() == "")
+                    {
+                        Ranked_TB.Focus();
+                        throw new Exception("Введите занятое место");
                     }
 
                     int r = Convert.ToInt32(Ranked_TB.Text);
