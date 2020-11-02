@@ -244,6 +244,7 @@
             this.Ranked_TB.ReadOnly = true;
             this.Ranked_TB.Size = new System.Drawing.Size(159, 22);
             this.Ranked_TB.TabIndex = 16;
+            this.Ranked_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Class_TB
             // 
@@ -255,6 +256,7 @@
             this.Class_TB.ReadOnly = true;
             this.Class_TB.Size = new System.Drawing.Size(159, 22);
             this.Class_TB.TabIndex = 14;
+            this.Class_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Middlename_TB
             // 
@@ -266,6 +268,7 @@
             this.Middlename_TB.ReadOnly = true;
             this.Middlename_TB.Size = new System.Drawing.Size(159, 22);
             this.Middlename_TB.TabIndex = 12;
+            this.Middlename_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Age_TB
             // 
@@ -277,6 +280,7 @@
             this.Age_TB.ReadOnly = true;
             this.Age_TB.Size = new System.Drawing.Size(159, 22);
             this.Age_TB.TabIndex = 6;
+            this.Age_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Name_TB
             // 
@@ -288,6 +292,7 @@
             this.Name_TB.ReadOnly = true;
             this.Name_TB.Size = new System.Drawing.Size(159, 22);
             this.Name_TB.TabIndex = 8;
+            this.Name_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Surname_TB
             // 
@@ -299,6 +304,7 @@
             this.Surname_TB.ReadOnly = true;
             this.Surname_TB.Size = new System.Drawing.Size(159, 22);
             this.Surname_TB.TabIndex = 10;
+            this.Surname_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Middlename_LB
             // 
@@ -321,6 +327,7 @@
             this.Averagerating_TB.ReadOnly = true;
             this.Averagerating_TB.Size = new System.Drawing.Size(159, 22);
             this.Averagerating_TB.TabIndex = 4;
+            this.Averagerating_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Age_LB
             // 
