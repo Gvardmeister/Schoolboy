@@ -24,7 +24,7 @@ namespace Schoolboy
             {
                 context = new Data.ApplicationContext();
 
-                InitializeListOfModels();
+                InitializeListOfSchoolboys();
 
                 if (Spisok_LB.Items.Count > 0)
                 {
@@ -97,7 +97,7 @@ namespace Schoolboy
 
                 if (modificationModel.ShowDialog() == DialogResult.OK)
                 {
-                    Schoolboy SchoolboyContext = context.Schoolboys.FirstOrDefault(s => s.Id == SchoolboyDB.Id);
+                    Schoolboy SchoolboyContext = Spisok_LB.SelectedItem as Schoolboy;                   
 
                     SchoolboyDB.Averagerating = Convert.ToDouble(modificationModel.Averagerating_TB.Text.Trim());
                     SchoolboyDB.Age = Convert.ToInt32(modificationModel.Age_TB.Text.Trim());
@@ -166,7 +166,7 @@ namespace Schoolboy
         private Data.ApplicationContext context;
         private BindingList<Schoolboy> Schoolboys;
 
-        private void InitializeListOfModels()
+        private void InitializeListOfSchoolboys()
         {
             Schoolboys = new BindingList<Schoolboy>(context.Schoolboys.ToList());
 
