@@ -127,6 +127,11 @@ namespace Schoolboy
                 {
                     Schoolboy SchoolboyDB = Spisok_LB.SelectedItem as Schoolboy;
 
+                    if (SchoolboyDB == null)
+                    {
+                        throw new Exception("Необходимо выбрать объект");
+                    }
+
                     context.Schoolboys.Remove(SchoolboyDB);
                     context.SaveChanges();
 
@@ -193,9 +198,7 @@ namespace Schoolboy
                 StateButton(true);
             }
             else
-            {
-                StateButton(false);
-
+            {               
                 Averagerating_TB.Clear();
                 Age_TB.Clear();
                 Name_TB.Clear();
@@ -203,6 +206,8 @@ namespace Schoolboy
                 Middlename_TB.Clear();
                 Class_TB.Clear();
                 Ranked_TB.Clear();
+
+                StateButton(false);
             }
         }
 
